@@ -5,7 +5,7 @@ order by 1,2
 
 -------------------
 -----Total Cases vs Total Deaths
--- Shows likelihood of dying if you contract covid in your country
+-- Shows the likelihood of dying if you contract COVID in the United States
 
 Select Location, date, total_cases,total_deaths, (total_deaths/total_cases)*100 as DeathPercentage
 From portfolio..CovidDeaths
@@ -14,7 +14,7 @@ and continent is not null
 order by 1,2
 ---------------
 -- Total Cases vs Population
--- Shows what percentage of population infected with Covid
+-- Shows what percentage of the population is infected with COVID
 
 Select Location, date, Population, total_cases,  (total_cases/population)*100 as PercentPopulationInfected
 From portfolio..CovidDeaths
@@ -28,7 +28,7 @@ Group by Location, Population
 order by PercentPopulationInfected desc
 
 
--- showing countries with highest death count per population 
+-- showing countries with the highest death count per population 
 Select Location, Population, MAX(total_deaths) as TotalDeathCount,
 Max((total_deaths/population))*100 as PercentPopulationDeath
 From portfolio..CovidDeaths
@@ -43,7 +43,7 @@ From portfolio..CovidDeaths
 WHERE continent is not null
 Group by [continent]
 order by  TotalDeathCount desc;
---- showing the continent with highest death count per population 
+--- showing the continent with the highest death count per population 
 Select continent , MAX(total_deaths) as TotalDeathCount,
  Max(total_deaths/population)*100 as TotalDeathPercentagePerPopulation
 From portfolio..CovidDeaths
@@ -63,7 +63,7 @@ Select sum(new_cases) as total_cases,sum(new_deaths) as total_deaths,
 Cast(sum(new_deaths) as float)/sum(new_cases)*100 as DeathPercentage
 From portfolio..CovidDeaths
 WHERE continent is not null; 
------- looking at total population vs vaccination 
+------ Looking at total population vs vaccination 
 
 
 With PopVsVac(continent,location,date,population,new_vaccinations,RollingPeopleVaccinated)
