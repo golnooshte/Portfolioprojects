@@ -1,7 +1,7 @@
 # CovidProject
 
 The provided SQL script involves multiple queries and actions related to analyzing COVID-19 data from the `CovidDeaths$` and `CovidVaccinations$` tables within the `Covid_Project` database. Here's a short description of the work done in each section:
-
+Link to the dataset:https://ourworldindata.org/covid-deaths
 1.Filter and Sort Data:
    - The initial query retrieves data from the `CovidDeaths$` table where the continent is not null, and it's ordered by the third and fourth columns.
 
@@ -54,3 +54,5 @@ The provided SQL script involves multiple queries and actions related to analyzi
     - A view named `PercentPopulationVaccinatedView` is created, encapsulating the CTE logic for easier data retrieval.
 
 The script involves various analytical queries, including comparisons of COVID-19 data, calculations of percentages and rates, joining tables, using CTEs and temporary tables, and creating a view for visualization purposes. The focus is on analyzing infection rates, vaccination rates, and other COVID-19-related statistics.
+
+After cleaning data we show some of our findings in the Tableau Project. You can find it here : https://public.tableau.com/app/profile/golnooah/viz/CovidDashboard_16830392418820/Dashboard1
