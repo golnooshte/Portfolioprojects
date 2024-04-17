@@ -1,7 +1,7 @@
 
-#Sales Performance Analysis:
+Sales Performance Analysis:
 
-###This report analyzes coffee and tea sales trends for a coffee shop chain over Q2 2023 (April-June).
+This report analyzes coffee and tea sales trends for a coffee shop chain over Q2 2023 (April-June).
 
 
 
