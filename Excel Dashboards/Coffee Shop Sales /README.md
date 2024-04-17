@@ -1,12 +1,12 @@
 
-Sales Performance Analysis:
+**Sales Performance Analysis:**
 
 This report analyzes coffee and tea sales trends for a coffee shop chain over Q2 2023 (April-June).
 
 
 
-##Key Insights : 
-Location Insights:
+****Key Insights : **
+****Location Insights:**
 Astoria is the highest-performing location with the overall highest revenue of $100,052, showcasing strong sales performance. Particularly in the tea category, Astoria excels compared to other stores.
 Hell's Kitchen has the highest revenue from coffee sales at $57,649.
 Product Performance
